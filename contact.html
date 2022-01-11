@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- owl carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymousreferrerpolicy=" no-referrer " />
+    <script
+      src=" https://kit.fontawesome.com/5526b8114d.js "
+      crossorigin=" anonymous "
+    ></script>
+    <link rel=" stylesheet " href=" cont-styles.css " />
+    <!-- <link rel=" stylesheet " href=" styles.css " /> -->
+    <title>Revuesoft</title>
+  </head>
+
+  <body onload=" loadfunc() ">
+    <div class=" loader" id=" loading ">
+  <div class="loader-inner">
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+  </div>
+  </div>
+  <nav class="navbar">
+      <div class="logo">
+        <a href="index.html"
+          ><img src="images/revuesoft.png" alt="" srcset=""
+        /></a>
+      </div>
+      <i class="fa fa-times" onclick="hide()"></i>
+      <i class="fa fa-bars" onclick="show()"></i>
+
+      <div class="links">
+        <a href="index.html#home">Home</a>
+        <a href="aboutus.html">About</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Industries
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content active">
+            <i class="fa fa-times" onclick="func(this)"></i>
+            <div class="drop-row">
+              <div class="column">
+                <a href="#">Banking & Financial Services</a>
+                <a href="#">Education</a>
+                <a href="#">HiTech</a>
+                <a href="#">Public Services</a>
+                <a href="#">Life Sciences</a>
+              </div>
+              <div class="column">
+                <a href="#">Insurance</a>
+                <a href="#">Retail</a>
+                <a href="#">Information Services</a>
+                <a href="#">Transportation & Hospitality</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Services
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content active">
+            <i class="fa fa-times" onclick="func(this)"></i>
+            <div class="drop-row">
+              <div class="column">
+                <a href="#">Analytics</a>
+                <a href="#">Cyber Security</a>
+                <a href="#">Automation & AI</a>
+                <a href="#">Internet of Things</a>
+                <a href="#">Mobility Applications</a>
+              </div>
+
+              <div class="column">
+                <a href="#">Enterprise Applications</a>
+                <a href="#">Cloud Applications</a>
+                <a href="#">Consulting</a>
+                <a href="#">Quality Assurance</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Products and Applications
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content active">
+            <i class="fa fa-times" onclick="func(this)"></i>
+            <div class="drop-row">
+              <div class="column">
+                <h3>Applications</h3>
+                <a href="#">NPA</a>
+                <a href="#">SEAM</a>
+                <a href="#">BuildTrack</a>
+                <a href="#">Connectify</a>
+              </div>
+
+              <div class="column">
+                <h3>Products</h3>
+                <a href="#">Race-ERP</a>
+                <a href="#">CampusSmart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+  
+
+  <!-- GET IN TOUCH -->
+  <div class="touch" id="sayhello">
+    <h1 style="text-align: center;">Get In Touch</h1>
+    <section class="contact-us">
+      <div class="cntrow">
+        <div class="cnt-col cl1">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>ABC Road,JKL Building</h5>
+              <p>Hyderabad, Telangana, IND</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>+91 9494949494</h5>
+              <p>Monday to Friday, 10AM to 11PM</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+              <h5>revuesoft@gmail.com</h5>
+              <p>Email Your Queries</p>
+            </span>
+          </div>
+        </div>
+        <div class="cnt-col cl2">
+          <form action='' >
+            <input type="text" name="name" placeholder="Enter Your Name" required>
+            <input type="email" name="email" placeholder="Enter Your Email Id" required>
+            <input type="numeric" name="Number" placeholder="Enter Your Phone Number" required>
+            <input type="text" name="subject" placeholder="Enter Your Subject" required>
+            <textarea rows="8" name="message" placeholder="Message"></textarea>
+            <button class="contact-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="foot-cont">
+      <div class="foot-row">
+        <div class="f-col-1">
+          <a href="terms.html">TERMS OF USE</a>
+            <a href="privacy-policy.html">PRIVACY POLICY</a>
+        </div>
+        <div class="f-col-2">
+          <a href="index.html"><img src="images/revuesoft.png " alt=" " /></a>
+        </div>
+        <div class="f-col-3">
+          <i class="fa fa-facebook-official"></i>
+          <i class="fa fa-linkedin"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-google-plus"></i>
+        </div>
+      </div>
+    </div>
+    <div class="foot-cont-2">
+      <hr style="background-color: white; margin-bottom: 12px" />
+       <h3>
+          Copyright &copy;2021. All Rights Reserved By Revuesoft Solutions India
+          Pvt Ltd.
+        </h3>
+    </div>
+  </div>
+
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js "
+    integrity=" sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin=" anonymous " referrerpolicy=" no-referrer "></script>
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "
+    integrity=" sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin=" anonymous " referrerpolicy="
+        no-referrer "></script>
+
+  
+  <script>
+    var preloader = document.getElementById(" loading ");
+
+    function loadfunc() {
+      preloader.style.display = " none ";
+    }
+  </script>
+  <script>
+      let dropdown = document.querySelector(".dropdown");
+      let down = dropdown.getElementsByClassName("fa-caret-down")[0];
+      let up = dropdown.getElementsByClassName("fa-caret-up")[0];
+      console.log(up);
+
+      let dropdowncont = dropdown.getElementsByClassName("dropdown-content")[0];
+      console.log(dropdowncont);
+
+      function showdrop() {
+        if (dropdowncont.style.display == "none") {
+          dropdowncont.style.display = "block";
+          up.style.display = "block";
+          down.style.display = "none";
+          console.log("working2");
+        } else {
+          dropdowncont.style.display = "none";
+          up.style.display = "none";
+          down.style.display = "block";
+          console.log("working");
+        }
+      }
+    </script>
+  <script src="script.js"></script>
+  </body>
+
+</html>
